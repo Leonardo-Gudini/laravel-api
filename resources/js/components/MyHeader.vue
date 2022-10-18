@@ -1,7 +1,7 @@
 <template>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
-            <a class="navbar-brand" href="#">Boolpress</a>
+            <a class="navbar-brand" href="/">Boolpress</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -10,7 +10,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul v-for="(item, index) in navItems" class="navbar-nav" :key="index">
                     <li class="nav-item">
-                        <a class="nav-link" :href="item.link">{{ item.name }}</a>
+                        <router-link class="nav-link" :to="{ name: item.link}">{{ item.name }}</router-link>
                     </li>
                 </ul>
             </div>
@@ -26,15 +26,15 @@ export default {
             navItems: [
                 {
                     name: 'contact',
-                    link: '#'
+                    link: 'contact'
                 },
                 {
                     name: 'posts',
-                    link: '#'
+                    link: 'posts'
                 },
                 {
                     name: 'info',
-                    link: '#'
+                    link: 'info'
                 },
             ]
         }

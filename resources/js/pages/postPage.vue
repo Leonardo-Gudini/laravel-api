@@ -2,7 +2,6 @@
   <div class="container">
     <div v-if="loading" class="d-flex justify-content-center">
             <div class="spinner-border" role="status">
-                <span class="sr-only">Loading...</span>
             </div>
         </div>
 
@@ -16,12 +15,14 @@
                 </div>
             </div>
         </div>
-  </div>
+    </div>
 </template>
 
 <script>
+import Axios from 'axios';
+
 export default {
-    name: "postPage",
+    name: 'postPage',
     data() {
         return{
             posts: [],

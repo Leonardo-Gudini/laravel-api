@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Benvenuto nella pagina contatti</h1>
+    <h1>Pagina Contatti</h1>
   </div>
 </template>
 

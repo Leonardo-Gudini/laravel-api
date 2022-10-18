@@ -6,7 +6,7 @@ Vue.use(VueRouter);
 import homePage from './pages/homePage.vue';
 import contactPage from './pages/contactPage.vue';
 import infoPage from './pages/infoPage.vue';
-// import postPage from './pages/postPage.vue';
+import postPage from './pages/postPage.vue';
 
 const router = new VueRouter({
     mode: "history",
@@ -21,11 +21,11 @@ const router = new VueRouter({
             name: 'contact',
             component: contactPage
         },
-        // {
-        //     // path: '/posts',
-        //     // name: 'posts',
-        //     // component: postPage
-        // },
+        {
+            path: '/posts',
+            name: 'posts',
+            component: postPage
+        },
         {
             path: '/info',
             name: 'info',

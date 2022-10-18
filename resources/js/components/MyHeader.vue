@@ -25,11 +25,11 @@ export default {
         return{
             navItems: [
                 {
-                    name: 'home',
+                    name: 'contact',
                     link: '#'
                 },
                 {
-                    name: 'blog',
+                    name: 'posts',
                     link: '#'
                 },
                 {

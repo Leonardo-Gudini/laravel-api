@@ -1,4 +1,4 @@
-window.axios = require('axios');
+// window.axios = require('axios');
 
 require('./bootstrap');
 
